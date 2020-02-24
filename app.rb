@@ -31,6 +31,6 @@ post '/fit/:name/:fit' do
     {cats: "meow"}
 end
 
-after do
-  response.body = JSON.dump
-end
+#after do
+#  response.body = JSON.dump
+#end
