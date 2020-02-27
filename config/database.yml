@@ -8,8 +8,7 @@ test:
   encoding: unicode
   databaes: database_test
   pool: 3
-production:
-  adapter: postgresql
-  encoding: unicode
+production: 
+  url: <%= ENV['DATABASE_URL'] %>
   databaes: database_production
   pool: 5
